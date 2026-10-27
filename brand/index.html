@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Darb Kinton brand</title>
+<link rel="icon" href="exports/icons/favicon.svg" type="image/svg+xml">
+<style>
+@font-face { font-family: 'Zen Antique'; src: url(fonts/ZenAntique-Regular.ttf); }
+@font-face { font-family: 'Yuji Boku'; src: url(fonts/YujiBoku-Regular.ttf); }
+@font-face { font-family: 'Geist'; src: url(fonts/Geist.ttf); font-weight: 100 900; }
+:root { --night: #03110C; --forest: #0E3527; --gold: #D9A54C; --ivory: #FBF7EC; --muted: #8FA399; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--night); color: var(--ivory); font: 400 16px/1.55 'Geist', sans-serif; }
+main { max-width: 1120px; margin: 0 auto; padding: 56px 24px 96px; display: grid; gap: 72px; }
+h1 { font: 400 clamp(56px, 9vw, 112px)/0.95 'Zen Antique', serif; margin: 0; }
+h2 { font: 400 32px/1.1 'Zen Antique', serif; margin: 0 0 20px; color: var(--gold); }
+p { margin: 0; max-width: 62ch; color: color-mix(in srgb, var(--ivory) 82%, transparent); }
+.lede { display: grid; gap: 14px; }
+.hero { width: 100%; border-radius: 20px; display: block; }
+.row { display: flex; flex-wrap: wrap; gap: 28px; align-items: end; }
+figure { margin: 0; display: grid; gap: 8px; justify-items: start; }
+figcaption { font-size: 13px; color: var(--muted); }
+.light { background: var(--ivory); border-radius: 20px; padding: 28px; }
+.swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+.sw { border-radius: 14px; overflow: hidden; background: var(--forest); }
+.sw i { display: block; height: 72px; }
+.sw div { padding: 10px 12px; font-size: 13px; }
+.sw b { display: block; font-weight: 600; }
+.type { display: grid; gap: 18px; }
+.type .seal { font: 400 64px/1 'Yuji Boku', serif; color: var(--gold); }
+.type .display { font: 400 56px/1 'Zen Antique', serif; }
+.type .ui { font: 400 20px/1.4 'Geist', sans-serif; }
+</style>
+</head>
+<body>
+<main>
+  <section class="lede">
+    <p style="color:var(--muted)">Darb</p>
+    <h1>Kinton</h1>
+    <p id="tagline"></p>
+    <p id="meaning"></p>
+    <p id="hero"></p>
+  </section>
+
+  <img class="hero" src="exports/social/hero.png" alt="A paper file closed with a gold seal stamped with the cloud crest, riding a gold vapour cloud across the night, beside the Kinton name and tagline">
+
+  <section>
+    <h2>App icons</h2>
+    <div class="row">
+      <figure><img src="exports/icons/icon-512.png" width="200" height="200" alt=""><figcaption>PWA icon</figcaption></figure>
+      <figure><img src="exports/icons/icon-maskable-512.png" width="200" height="200" alt="" style="border-radius:50%"><figcaption>Maskable, circle crop</figcaption></figure>
+      <figure><img src="exports/icons/icon-desktop-1024.png" width="200" height="200" alt=""><figcaption>Desktop</figcaption></figure>
+      <figure><img src="exports/icons/apple-touch-icon.png" width="90" height="90" alt="" style="border-radius:20px"><figcaption>iOS</figcaption></figure>
+      <figure><img src="exports/icons/favicon-48.png" width="48" height="48" alt=""><figcaption>48</figcaption></figure>
+      <figure><img src="exports/icons/favicon-32.png" width="32" height="32" alt=""><figcaption>32</figcaption></figure>
+      <figure><img src="exports/icons/favicon-16.png" width="16" height="16" alt=""><figcaption>16</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Marks</h2>
+    <div class="row">
+      <figure><img src="exports/svg/mark-on-night.svg" width="160" height="160" alt=""><figcaption>On night</figcaption></figure>
+      <figure><img src="exports/svg/mark-gold.svg" width="160" height="160" alt=""><figcaption>Gold</figcaption></figure>
+      <figure><img src="exports/svg/mark-ivory.svg" width="160" height="160" alt=""><figcaption>Ivory</figcaption></figure>
+      <figure><img src="exports/icons/badge-96.png" width="96" height="96" alt="" style="background:#333;border-radius:12px"><figcaption>Monochrome badge</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Wordmark</h2>
+    <div style="display:grid;gap:24px">
+      <img src="exports/svg/wordmark-on-dark.svg" alt="Darb Kinton wordmark on dark" style="width:min(640px,100%)">
+      <div class="light"><img src="exports/svg/wordmark-on-light.svg" alt="Darb Kinton wordmark on light" style="width:min(600px,100%)"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Colour</h2>
+    <div class="swatches" id="swatches"></div>
+  </section>
+
+  <section>
+    <h2>Type</h2>
+    <div class="type">
+      <div><div class="seal">筋斗雲</div><figcaption>Yuji Boku: the Japanese name only</figcaption></div>
+      <div><div class="display" id="tagline2"></div><figcaption>Zen Antique: wordmark and big headings</figcaption></div>
+      <div><div class="ui">Sending to Nour’s iPhone: 71%, 18.2 MB/s, direct.</div><figcaption>Geist: interface text and data</figcaption></div>
+    </div>
+  </section>
+</main>
+<script type="module">
+const t = await (await fetch('src/tokens.json')).json()
+document.getElementById('tagline').textContent = t.tagline
+document.getElementById('tagline2').textContent = t.tagline
+document.getElementById('meaning').textContent = t.mark.meaning
+document.getElementById('hero').textContent = 'The hero: ' + t.mark.hero
+document.getElementById('swatches').innerHTML = Object.entries(t.color)
+  .map(([k, v]) => `<div class="sw"><i style="background:${v.hex}"></i><div><b>${k} ${v.hex}</b>${v.role}</div></div>`).join('')
+</script>
+</body>
+</html>

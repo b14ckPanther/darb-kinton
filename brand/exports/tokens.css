@@ -1,0 +1,16 @@
+/* Generated from src/tokens.json by scripts/build.mjs. Edit the JSON, not this file. */
+:root {
+  --night: #03110C; /* Darb night: base surface, the sky */
+  --forest: #0E3527; /* Darb forest: raised surfaces, device orbs */
+  --gold: #D9A54C; /* Darb gold: the nimbus, the arc */
+  --gold-light: #FBE7BD; /* Gold highlights, the bead in flight */
+  --gold-deep: #6D4C17; /* Gold in shadow */
+  --nimbus: #E9C46F; /* Cloud body: warm gold, softer than metal */
+  --sky: #7FB3C8; /* Rim light and atmosphere */
+  --ivory: #FBF7EC; /* Text on night, files and paper */
+  --ink: #0B2219; /* Text on ivory */
+  --muted: #8FA399; /* Secondary text on night */
+  --font-seal: 'Yuji Boku', 'Hiragino Mincho ProN', serif;
+  --font-display: 'Zen Antique', 'Hiragino Mincho ProN', serif;
+  --font-ui: 'Geist', system-ui, sans-serif;
+}

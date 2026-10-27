@@ -1,0 +1,13 @@
+{
+  "name": "darb-kinton-brand",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node scripts/build.mjs" },
+  "devDependencies": {
+    "opentype.js": "1.3.4",
+    "playwright-core": "1.48.2",
+    "png-to-ico": "2.1.8",
+    "sharp": "0.33.5",
+    "three": "0.170.0"
+  }
+}
